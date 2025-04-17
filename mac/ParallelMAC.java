@@ -3,6 +3,10 @@ import java.util.*;
 
 public class ParallelMAC {
 
+    public ParallelMAC(){
+        
+    }
+
     public static int compute(int[] x, int[] y) throws InterruptedException {
         if (x.length != y.length) {
             throw new IllegalArgumentException("Input arrays must be the same length.");
