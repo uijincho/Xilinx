@@ -1,4 +1,4 @@
-package mac.mac;
+package mac;
 import java.util.List;
 import java.util.stream.IntStream;
 
