@@ -25,14 +25,9 @@ public class SequentialPrimeFinder {
 
 	}
 
-<<<<<<< HEAD:src/primes/SequentialPrimeFinder.java
 	static int primeCount = 0;
 
 	static long compute(int upperLimit) {
-=======
-	public static void main(String args[]) {
-		long upperLimit = 1000000;
->>>>>>> 00fc605f1517648f971b5e20c224b7d4c35dc248:mac/SequentialPrimeFinder.java
 		long start = System.nanoTime();
 
 		List<Integer> primes = new ArrayList<>();
