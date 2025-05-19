@@ -1,5 +1,4 @@
-package mac;
-import java.util.*;
+package src.mac_legacy;
 
 public class SequentialMAC {
     public static int compute(int[] x, int[] y) {

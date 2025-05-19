@@ -1,5 +1,5 @@
-package mac;
-import java.util.*;
+package src.mac_legacy;
+
 public class TestArrays{
     public static void main(String[] args) throws InterruptedException
     {
@@ -15,20 +15,22 @@ public class TestArrays{
         int parallel = ParallelMAC.compute(arr1, arr2);
        
         long end1 = (System.nanoTime()-start)/1000000;
-        System.out.println("Sequential time complexity: " + end1);
+        System.out.println("Parallel time complexity: " + end1);
        
         long start2 = System.nanoTime();
        
         int sequential = SequentialMAC.compute(arr1, arr2);
        
         long end2 = (System.nanoTime()-start2)/1000000 + 1;
-        System.out.println("Parallel time complexity: " + end2);
+        System.out.println("Sequential time complexity: " + end2);
        
         if (parallel == sequential){
             System.out.println("Both outputs are the same");
-        }
-        else{
+        } else{
             System.out.println("Both outputs are not the same");
         }
+
+
+
     }
 }
