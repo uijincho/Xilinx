@@ -7,7 +7,7 @@ import java.util.List;
 
 public class SequentialPrimeFinder {
 
-	public static boolean isPrime(int number) {
+	public static boolean SequentialisPrime(int number) {
 
 		if (number <= 1) return false;
 
@@ -26,14 +26,14 @@ public class SequentialPrimeFinder {
 	}
 
 	public static void main(String args[]) {
-		int upperLimit = 10000;
+		long upperLimit = 1000000;
 		long start = System.nanoTime();
 
 		List<Integer> primes = new ArrayList<>();
 
 		for (int i = 2; i <= upperLimit; i++) {
 
-			if (isPrime(i)) {
+			if (SequentialisPrime(i)) {
 
 				primes.add(i);
 

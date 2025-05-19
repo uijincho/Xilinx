@@ -14,8 +14,9 @@ public class ParallelPrimeFinder {
         return true;
     }
 
-    public static void findPrimes(int upperLimit) {
-        long start = System.nanoTime();
+    public static void main(String args[]) {
+    	int upperLimit = 1000000;
+        long parallelstart = System.nanoTime();
 
         List<Integer> primes = IntStream.rangeClosed(2, upperLimit)
                 .parallel()
@@ -23,7 +24,7 @@ public class ParallelPrimeFinder {
                 .boxed()
                 .toList();
 
-        long end = System.nanoTime();
-        System.out.println("Parallel: Found " + primes.size() + " primes in " + ((end - start) / 1_000_000) + " ms");
+        long paralellend = System.nanoTime();
+        System.out.println("Parallel: Found " + primes.size() + " primes in " + ((paralellend - parallelstart) / 1_000_000) + " ms");
     }
 }
